@@ -314,12 +314,15 @@ class YouTubeAPI:
             x.download([link])
             return xyz
 
-        def audio_dl():
+        def video_dl():
             ydl_optssx = {
+                "format": "(bestvideo[height<=?720][width<=?1280][ext=mp4])+(bestaudio[ext=m4a])",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
+                "geo_bypass": True,
+                "nocheckcertificate": True,
                 "quiet": True,
+                "cookiefile" : cookie_txt_file(),
                 "no_warnings": True,
-                "proxy": "8.223.31.16:80"
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
