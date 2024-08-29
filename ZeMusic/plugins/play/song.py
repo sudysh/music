@@ -18,7 +18,7 @@ from ZeMusic.plugins.play.filters import command
 def remove_if_exists(path):
     if os.path.exists(path):
         os.remove(path)
-        
+channel = "eer_5o"              
 lnk = config.CHANNEL_LINK
 Nem = config.BOT_NAME + " ابحث"
 @app.on_message(command(["song", "/song", "بحث", Nem]))
@@ -26,15 +26,16 @@ async def song_downloader(client, message: Message):
     query = " ".join(message.command[1:])
     m = await message.reply_text("<b>⇜ جـارِ البحث ..</b>")
     
-    ydl_ops = {
-        'format': 'bestaudio[ext=m4a]',
-        'keepvideo': True,
-        'prefer_ffmpeg': False,
-        'geo_bypass': True,
-        'outtmpl': '%(title)s.%(ext)s',
-        'quite': True,
-        'proxy': '180.31.234.71:8080'
-}
+    ydl_opts = {
+        "format": "bestaudio[ext=m4a]",
+        "keepvideo": True,
+        "prefer_ffmpeg": False,
+        "geo_bypass": True,
+        "outtmpl": "%(title)s.%(ext)s",
+        "quiet": True,
+        "cookiefile": cookie_txt_file(),  # إضافة هذا السطر لتمرير ملف الكوكيز
+    }
+
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
@@ -58,7 +59,7 @@ async def song_downloader(client, message: Message):
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
         
-        rep = f"⟡ {app.mention}"
+        rep = f"ᴍʏ ᴡᴏʀʟᴅ 𓏺 @{channel} "
         host = str(info_dict["uploader"])
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
@@ -75,7 +76,7 @@ async def song_downloader(client, message: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=config.CHANNEL_NAME, url=lnk),
+                        InlineKeyboardButton(text=" Developer ", url=f"http://t.me/Z_l_7"),
                     ],
                 ]
             ),
