@@ -22,12 +22,12 @@ async def zdatsr(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🍻 اوامــر التشغيــل ", callback_data="zzzll"),
+                        " اوامــر التشغيــل ", callback_data="zzzll"),
                 ],[
                     InlineKeyboardButton(
-                        "🍻 اوامـر القنـاة ", callback_data="zzzch"),
+                        " اوامـر القنـاة ", callback_data="zzzch"),
                     InlineKeyboardButton(
-                        "🍻 اوامـر الادمـن ", callback_data="zzzad"),
+                        " اوامـر الادمـن ", callback_data="zzzad"),
                 ],[
                     InlineKeyboardButton(
                         text=config.CHANNEL_NAME, url=config.CHANNEL_LINK),
