@@ -40,9 +40,9 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-CHANNEL_NAME = getenv("CHANNEL_NAME", "sᴏᴜʀᴄᴇᴀʟɪᴄᴇ ")
-CHANNEL_LINK = getenv("CHANNEL_LINK", "https://t.me/ngd_1")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ngd_1")
+CHANNEL_NAME = getenv("CHANNEL_NAME", "𝅘𝅥𝅮")
+CHANNEL_LINK = getenv("CHANNEL_LINK", "https://t.me/PPRE4")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/PPRE4")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -79,18 +79,18 @@ autoclean = []
 confirmer = {}
 
 
-START_IMG_URL = "https://telegra.ph/file/45aa2586f2abb846ad87c.jpg"
-PING_IMG_URL = "https://telegra.ph/file/45aa2586f2abb846ad87c.jpg"
-PLAYLIST_IMG_URL = "https://telegra.ph/file/45aa2586f2abb846ad87c.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/45aa2586f2abb846ad87c.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/45aa2586f2abb846ad87c.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/45aa2586f2abb846ad87c.jpg"
-STREAM_IMG_URL = "https://telegra.ph/file/45aa2586f2abb846ad87c.jpg"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/file/45aa2586f2abb846ad87c.jpg"
-YOUTUBE_IMG_URL = "https://telegra.ph/file/e29510f6e263bb5264cfb.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/45aa2586f2abb846ad87c.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/45aa2586f2abb846ad87c.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/45aa2586f2abb846ad87c.jpg"
+START_IMG_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
+PING_IMG_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
+PLAYLIST_IMG_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
+STATS_IMG_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
+TELEGRAM_AUDIO_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
+TELEGRAM_VIDEO_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
+STREAM_IMG_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
+SOUNCLOUD_IMG_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
+YOUTUBE_IMG_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
+SPOTIFY_ARTIST_IMG_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
+SPOTIFY_ALBUM_IMG_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
+SPOTIFY_PLAYLIST_IMG_URL = "https://forkgraph.zaid.pro/file/UlKNmZip8W75"
 
 
 def time_to_seconds(time):
